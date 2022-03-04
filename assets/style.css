@@ -1,0 +1,133 @@
+:root{
+    --cont-color : black;
+}
+/* Setting Font Family for whole page */
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* Creating a nice background color for the page
+this will be the main color pallete */
+body { 
+    background: linear-gradient(#9A7787, #E4AFB0, #FED7BF); 
+    background-repeat: no-repeat;
+} 
+
+header {
+    background-color: rgb(199, 157, 153);
+    display: flex;
+    justify-content: space-between;
+}
+
+/* styling my name to fit next to my avatar */
+header div h1 {
+    align-items: center;
+    display: inline;
+    font-size: 50px;
+    font-style: italic;
+}
+
+/* styling my portfolio photo */
+header div img {
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 100px;
+}
+
+/* Styling the Nav Links in the header */
+li {
+    padding-top: 120px;
+    margin-right: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    list-style-type: none;
+}
+
+.projectContainer{
+    background: gray;
+    position: relative;
+    border: 5px solid var(--cont-color);
+}
+
+.leftColumn {
+   width: 20%; 
+}
+.centerColumn {
+    width: 75%;
+}
+.rightColumn {
+    width: 30%;
+}
+
+.projectLabel{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: var(--cont-color);
+}
+
+/* Styling for the small aside section, might remove */
+.rightColumn section {
+    float: right;
+    background-color: #9A7787;
+    margin-right: 20px;
+    padding: 10px;
+    clear: both;
+    float: right;
+    width: 100%;
+    height: 50%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Styling for main Paragraph to allow images and aside bar to layout correclty */
+.flex {
+    display: flex;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+.direction {
+    flex-direction: column;
+}
+
+.subContainer{
+    width: 100%;
+    justify-content: space-between;
+}
+
+/* Styling the main project image */
+.imagestyle1 {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+
+/* Styling the two smaller project images */
+.imagestyle2 {
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.imagestyle1:hover,
+.imagestyle2:hover{
+    opacity: 50%;
+    transition: opacity 2s;
+}
+.imagepadding {
+    padding: 10px;
+}
+
+/* Styling for the images in the aside section */
+.rightColumn img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+/* styling in the footer section that contains the contact info */
+.footer h2 {
+    background-color: #E4AFB0;
+    padding: 30px;
+    position: absolute;
+    
+
+
+}
